@@ -1,8 +1,13 @@
 package com.Chandra.sample;
-public class HelloWorldTest {
-    @Test
-    public void testSayHello() {
+
+public class HelloWorld {
+    public String sayHello() {
+        return "Hello, World!";
+    }
+
+    public static void main(String[] args) {
         HelloWorld hw = new HelloWorld();
-        assertEquals("Hello, World!", hw.sayHello());
+        System.out.println(hw.sayHello());
     }
 }
+
