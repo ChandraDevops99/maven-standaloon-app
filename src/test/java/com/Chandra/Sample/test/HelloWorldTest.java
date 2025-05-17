@@ -1,41 +1,18 @@
-package com.kk.sample.test;
+package com.Chandra.sample;
 
- import org.junit.jupiter.api.Test;
- import static org.junit.jupiter.api.Assertions.assertTrue;
- import junit.framework.Test;
- import junit.framework.TestCase;
- import junit.framework.TestSuite;
- import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
- /**
-  * Unit test for HelloWorld.
-  */
- public class HelloWorldTest 
-     extends TestCase
- {
-     /**
-      * Create the test case
-      *
-      * @param testName name of the test case
-      */
-     public HelloWorldTest( String testName )
-     {
-         super( testName );
-     }
- 
-     /**
-      * @return the suite of tests being tested
-      */
-     public static Test suite()
-     {
-         return new TestSuite( HelloWorldTest.class );
-     }
- 
-     /**
-      * Rigourous Test :-)
-      */
-     public void testApp()
-     {
-         assertTrue( true );
-     }
- }
+public class HelloWorldTest {
+
+    @Test
+    public void testGreeting() {
+        String greeting = getGreeting();
+        assertEquals("Hello, World!", greeting);
+    }
+
+    // Example method to test
+    public String getGreeting() {
+        return "Hello, World!";
+    }
+}
