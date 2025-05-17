@@ -1,5 +1,7 @@
 package com.kk.sample.test;
- 
+
+ import org.junit.jupiter.api.Test;
+ import static org.junit.jupiter.api.Assertions.assertTrue;
  import junit.framework.Test;
  import junit.framework.TestCase;
  import junit.framework.TestSuite;
