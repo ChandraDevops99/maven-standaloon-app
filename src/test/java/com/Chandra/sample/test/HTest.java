@@ -1,14 +1,14 @@
 package com.Chandra.sample;
-public class HelloWorldTest {
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class HTest {
 
     @Test
-    public void testGreeting() {
-        String greeting = getGreeting();
-        assertEquals("Hello, World!", greeting);
-    }
-
-    // Example method to test
-    public String getGreeting() {
-        return "Hello, World!";
+    public void testSayHello() {
+        HelloWorld hw = new HelloWorld();
+        assertEquals("Hello, World!", hw.sayHello());
     }
 }
+
